@@ -1,0 +1,1 @@
+import {NextResponse} from 'next/server';import {projects} from '../../../../lib/data';export async function GET(){return NextResponse.json({type:'FeatureCollection',features:projects.map(p=>({type:'Feature',geometry:{type:'Point',coordinates:[p.lng,p.lat]},properties:{id:p.id,name:p.name,risk:p.risk}}))})}

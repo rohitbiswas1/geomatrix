@@ -1,0 +1,1 @@
+import {NextResponse} from 'next/server';import {projects} from '../../../lib/data';export async function GET(){return NextResponse.json({data:projects})}export async function POST(req:Request){return NextResponse.json({message:'Project created in prototype mode',project:{...(await req.json()),id:'demo-'+Date.now()}},{status:201})}

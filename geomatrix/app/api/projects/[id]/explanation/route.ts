@@ -1,0 +1,1 @@
+import {NextResponse} from 'next/server';import {findProject} from '../../../../../lib/api';import {explain} from '../../../../../lib/data';export async function GET(_:Request,{params}:{params:Promise<{id:string}>}){const project=findProject((await params).id);return project?NextResponse.json({data:explain(project)}):NextResponse.json({error:'Project not found.'},{status:404})}

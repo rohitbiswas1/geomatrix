@@ -1,0 +1,1 @@
+import {NextResponse} from 'next/server';import {findProject,recommendations} from '../../../../../lib/api';export async function GET(_:Request,{params}:{params:Promise<{id:string}>}){const id=(await params).id;return findProject(id)?NextResponse.json({data:recommendations(id)}):NextResponse.json({error:'Project not found.'},{status:404})}
