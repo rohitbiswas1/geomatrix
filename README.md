@@ -1,29 +1,17 @@
-# Geomatrix — Land Acquisition AI
+# GEOMATRIX — Land Acquisition AI
 
-Smart India Hackathon 2026 · Problem Statement 26017
+Predictive Intelligence for Smarter Infrastructure.
 
-Predictive decision-support prototype for early detection of land acquisition delays.
-
-## Features
-- Dashboard and project portfolio
-- Deterministic mock risk prediction engine
-- SHAP-style risk explanations
-- Prioritized recommendations
-- Alerts and acknowledgement workflow
-- GIS map/API endpoints
-- Analytics and reports
-- Data management and model monitoring
-- Prisma schema for GovTech land-acquisition entities
+Smart India Hackathon 2026 prototype for Problem Statement 26017: Predictive Analytics System for Early Detection of Land Acquisition Delays.
 
 ## Run locally
+1. `npm install`
+2. Copy `.env.example` to `.env.local`.
+3. Add required environment values.
+4. `npm run dev`
+5. Open `http://localhost:3000/login`.
 
-```bash
-npm install
-npm run dev
-```
+This prototype uses deterministic synthetic data and a mock risk/explanation engine. Do not treat demo metrics as trained government-data performance.
 
-Create `.env.local` from `.env.example` and add your local environment values. Never commit real API keys, OAuth secrets, or database credentials.
-
-## Environment
-
-See `.env.example` for the expected configuration placeholders.
+## Deployment
+Vercel hosts the Next.js app. Add secrets only through Vercel Environment Variables. Never commit API keys, OAuth secrets, or database credentials.

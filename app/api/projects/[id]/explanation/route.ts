@@ -1,0 +1,1 @@
+import {NextResponse} from 'next/server';import {getProject} from '../../../../../lib/api';import {explain} from '../../../../../lib/data';export async function GET(_:Request,{params}:{params:Promise<{id:string}>}){return NextResponse.json({data:explain(getProject((await params).id))})}

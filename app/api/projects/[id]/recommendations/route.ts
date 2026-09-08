@@ -1,0 +1,1 @@
+import {NextResponse} from 'next/server';import {recommendations} from '../../../../../lib/api';export async function GET(_:Request,{params}:{params:Promise<{id:string}>}){return NextResponse.json({data:recommendations((await params).id)})}

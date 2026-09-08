@@ -1,0 +1,1 @@
+import {NextResponse} from 'next/server';import {getProject} from '../../../../../lib/api';import {calcRisk} from '../../../../../lib/data';export async function GET(_:Request,{params}:{params:Promise<{id:string}>}){const p=getProject((await params).id);return NextResponse.json({data:{...calcRisk(p),confidence:p.confidence}})}
