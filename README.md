@@ -98,9 +98,8 @@ The current application uses the **Google Maps JavaScript API** when this enviro
 NEXT_PUBLIC_GOOGLE_MAPS_API_KEY=your_google_maps_browser_key
 ```
 
-OpenStreetMap is retained as a fallback for local/demo use when the Google Maps key is unavailable.
 
-**Security:** never commit API keys to GitHub. Configure them through Vercel/environment variables and restrict the Google Maps browser key to authorized HTTP referrers and required APIs in Google Cloud.
+**Security:** Never commit API keys to GitHub. Configure them through Vercel/environment variables and restrict the Google Maps browser key to authorized HTTP referrers and required APIs in Google Cloud.
 
 ---
 
