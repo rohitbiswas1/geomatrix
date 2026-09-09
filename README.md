@@ -113,7 +113,7 @@ OpenStreetMap is retained as a fallback for local/demo use when the Google Maps 
 | Charts | Recharts |
 | Backend | Next.js API routes; FastAPI production option |
 | Database | PostgreSQL + PostGIS + Prisma |
-| GIS | Google Maps JavaScript API + OpenStreetMap fallback |
+| GIS | Google Maps JavaScript API |
 | ML | XGBoost / Random Forest, pandas, NumPy, scikit-learn |
 | Explainability | SHAP |
 | Deployment | Vercel |
